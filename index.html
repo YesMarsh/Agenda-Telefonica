@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Telefônica</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Agenda Telefônica</span>
+      <button onclick="openModal()" id="new">Cadastrar</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+            <th>Cidade</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+            <th class="acao">Wpp</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" required />
+  
+          <label for="telefone">Telefone</label>
+          <input id="telefone" type="number" required />
+  
+          <label for="email">E-mail</label>
+          <input id="email" type="text" required />
+
+          <label for="cidade">Cidade</label>
+          <input id="cidade" type="text" required />
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
